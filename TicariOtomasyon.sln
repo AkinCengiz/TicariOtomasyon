@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicariOtomasyon", "TicariOtomasyon.csproj", "{38C08450-DE59-4E84-9EE5-9CEC287B6358}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38C08450-DE59-4E84-9EE5-9CEC287B6358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C08450-DE59-4E84-9EE5-9CEC287B6358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C08450-DE59-4E84-9EE5-9CEC287B6358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C08450-DE59-4E84-9EE5-9CEC287B6358}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF685077-E832-4C8D-93A3-FDD04D7ADA72}
+	EndGlobalSection
+EndGlobal
