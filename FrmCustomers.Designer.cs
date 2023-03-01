@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCustomers));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.cmbTowns = new System.Windows.Forms.ComboBox();
             this.cmbCities = new System.Windows.Forms.ComboBox();
+            this.cmbTowns = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.dgvTowns = new System.Windows.Forms.DataGridView();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.mtxtTelephone2 = new System.Windows.Forms.MaskedTextBox();
@@ -58,8 +59,11 @@
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.dgvCustomers = new System.Windows.Forms.DataGridView();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTowns.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTowns)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaxAdminisration.Properties)).BeginInit();
@@ -72,8 +76,10 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.cmbTowns);
+            this.groupControl1.Controls.Add(this.comboBox1);
             this.groupControl1.Controls.Add(this.cmbCities);
+            this.groupControl1.Controls.Add(this.cmbTowns);
+            this.groupControl1.Controls.Add(this.dgvTowns);
             this.groupControl1.Controls.Add(this.labelControl11);
             this.groupControl1.Controls.Add(this.labelControl10);
             this.groupControl1.Controls.Add(this.mtxtTelephone2);
@@ -102,15 +108,6 @@
             this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "Ürün Kontrol";
             // 
-            // cmbTowns
-            // 
-            this.cmbTowns.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cmbTowns.FormattingEnabled = true;
-            this.cmbTowns.Location = new System.Drawing.Point(107, 411);
-            this.cmbTowns.Name = "cmbTowns";
-            this.cmbTowns.Size = new System.Drawing.Size(187, 26);
-            this.cmbTowns.TabIndex = 32;
-            // 
             // cmbCities
             // 
             this.cmbCities.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -118,8 +115,28 @@
             this.cmbCities.Location = new System.Drawing.Point(107, 379);
             this.cmbCities.Name = "cmbCities";
             this.cmbCities.Size = new System.Drawing.Size(187, 26);
-            this.cmbCities.TabIndex = 31;
+            this.cmbCities.TabIndex = 35;
             this.cmbCities.SelectedIndexChanged += new System.EventHandler(this.cmbCities_SelectedIndexChanged);
+            // 
+            // cmbTowns
+            // 
+            this.cmbTowns.Location = new System.Drawing.Point(107, 409);
+            this.cmbTowns.Name = "cmbTowns";
+            this.cmbTowns.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cmbTowns.Properties.Appearance.Options.UseFont = true;
+            this.cmbTowns.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbTowns.Size = new System.Drawing.Size(187, 24);
+            this.cmbTowns.TabIndex = 34;
+            // 
+            // dgvTowns
+            // 
+            this.dgvTowns.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTowns.Location = new System.Drawing.Point(42, 516);
+            this.dgvTowns.Name = "dgvTowns";
+            this.dgvTowns.RowTemplate.Height = 25;
+            this.dgvTowns.Size = new System.Drawing.Size(240, 150);
+            this.dgvTowns.TabIndex = 33;
             // 
             // labelControl11
             // 
@@ -135,7 +152,7 @@
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(64, 414);
+            this.labelControl10.Location = new System.Drawing.Point(64, 412);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(33, 18);
             this.labelControl10.TabIndex = 29;
@@ -187,6 +204,7 @@
             this.btnAdd.Size = new System.Drawing.Size(135, 58);
             this.btnAdd.TabIndex = 19;
             this.btnAdd.Text = "KAYDET";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnClear
             // 
@@ -200,6 +218,7 @@
             this.btnClear.Size = new System.Drawing.Size(135, 57);
             this.btnClear.TabIndex = 23;
             this.btnClear.Text = "TEMİZLE";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnUpdate
             // 
@@ -213,6 +232,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(135, 58);
             this.btnUpdate.TabIndex = 21;
             this.btnUpdate.Text = "GÜNCELLE";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -226,6 +246,7 @@
             this.btnDelete.Size = new System.Drawing.Size(135, 58);
             this.btnDelete.TabIndex = 22;
             this.btnDelete.Text = "SİL";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // rtxtAddress
             // 
@@ -248,7 +269,7 @@
             // 
             // txtTaxAdminisration
             // 
-            this.txtTaxAdminisration.Location = new System.Drawing.Point(107, 443);
+            this.txtTaxAdminisration.Location = new System.Drawing.Point(107, 439);
             this.txtTaxAdminisration.Name = "txtTaxAdminisration";
             this.txtTaxAdminisration.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtTaxAdminisration.Properties.Appearance.Options.UseFont = true;
@@ -259,7 +280,7 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(8, 446);
+            this.labelControl8.Location = new System.Drawing.Point(8, 442);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(89, 18);
             this.labelControl8.TabIndex = 14;
@@ -396,6 +417,15 @@
             this.dgvCustomers.TabIndex = 4;
             this.dgvCustomers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomers_CellClick);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(71, 584);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(187, 26);
+            this.comboBox1.TabIndex = 36;
+            // 
             // FrmCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -409,6 +439,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTowns.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTowns)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtTaxAdminisration.Properties)).EndInit();
@@ -450,7 +482,9 @@
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DataGridView dgvCustomers;
-        private ComboBox cmbTowns;
+        private DataGridView dgvTowns;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbTowns;
         private ComboBox cmbCities;
+        private ComboBox comboBox1;
     }
 }

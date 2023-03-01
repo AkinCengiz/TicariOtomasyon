@@ -11,6 +11,7 @@ namespace TicariOtomasyon
         }
 
         private FrmProducts frmProducts;
+        
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (frmProducts == null)
@@ -22,7 +23,7 @@ namespace TicariOtomasyon
         }
 
         private SqlDatabaseConnection _connection = new SqlDatabaseConnection();
-        
+        private SqlCommand _sqlCommand;
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadProducts();
@@ -35,6 +36,7 @@ namespace TicariOtomasyon
 
         }
 
+       
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FrmCustomers frmCustomers = new FrmCustomers();
