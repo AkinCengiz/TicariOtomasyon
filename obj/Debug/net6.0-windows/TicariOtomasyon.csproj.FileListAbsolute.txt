@@ -108,3 +108,5 @@ C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\ref\TicariO
 C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmProducts.resources
 C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.Properties.Resources.resources
 C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmCustomers.resources
+C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmEmployees.resources
+C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmCompanies.resources

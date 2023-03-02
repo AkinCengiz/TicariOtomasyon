@@ -43,5 +43,19 @@ namespace TicariOtomasyon
             frmCustomers.MdiParent = this;
             frmCustomers.Show();
         }
+
+        private void btnEmployeesForm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmEmployees frmEmployees = new FrmEmployees();
+            frmEmployees.MdiParent = this;
+            frmEmployees.Show();
+        }
+
+        private void btnCompaniesForm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmCompanies frmCompanies = new FrmCompanies();
+            frmCompanies.MdiParent = this;
+            frmCompanies.Show();
+        }
     }
 }

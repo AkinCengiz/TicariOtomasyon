@@ -18,8 +18,7 @@ namespace TicariOtomasyon
     {
         private SqlDatabaseConnection _connection;
         private SqlCommand _sqlCommand;
-        private Town town = new Town();
-
+        
         public FrmCustomers()
         {
             InitializeComponent();
@@ -31,11 +30,6 @@ namespace TicariOtomasyon
             LoadCustomers();
             LoadCities();
             cmbCities.SelectedIndex = 0;
-            //LoadTowns(Convert.ToInt32(cmbCities.SelectedIndex+1));
-            LoadTowns(Convert.ToInt32(cmbCities.SelectedValue));
-            //cmbTowns.SelectedIndex = 0;
-            dgvTowns.DataSource = town.GetTowns(Convert.ToInt32(cmbCities.SelectedValue));
-
         }
 
         private void LoadCities()
@@ -56,58 +50,43 @@ namespace TicariOtomasyon
             SqlDataAdapter adapter = new SqlDataAdapter("select * from Customers",_connection.Connection());
             adapter.Fill(dataTable);
             dgvCustomers.DataSource = dataTable;
-            _connection.Connection().Close();
         }
 
         private void dgvCustomers_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dgvCustomers.CurrentRow != null)
             {
-                txtId.Text = dgvCustomers.CurrentRow.Cells[0].Value.ToString();
-                txtFirstName.Text = dgvCustomers.CurrentRow.Cells[1].Value.ToString();
-                txtLastName.Text = dgvCustomers.CurrentRow.Cells[2].Value.ToString();
-                mtxtTelephone1.Text = dgvCustomers.CurrentRow.Cells[3].Value.ToString();
-                mtxtTelephone2.Text = dgvCustomers.CurrentRow.Cells[4].Value.ToString();
-                mtxtIdentityNumber.Text = dgvCustomers.CurrentRow.Cells[5].Value.ToString();
-                txtMail.Text = dgvCustomers.CurrentRow.Cells[6].Value.ToString();
-                cmbCities.SelectedValue = Convert.ToInt32(dgvCustomers.CurrentRow.Cells[7].Value);
-                cmbTowns.SelectedItem = Convert.ToInt32(dgvCustomers.CurrentRow.Cells[8].Value);
-                rtxtAddress.Text = dgvCustomers.CurrentRow.Cells[9].Value.ToString();
-                txtTaxAdminisration.Text = dgvCustomers.CurrentRow.Cells[10].Value.ToString();
-
-                dgvTowns.DataSource = town.GetTowns(Convert.ToInt32(dgvCustomers.CurrentRow.Cells[7].Value));
+                try
+                {
+                    txtId.Text = dgvCustomers.CurrentRow.Cells[0].Value.ToString();
+                    txtFirstName.Text = dgvCustomers.CurrentRow.Cells[1].Value.ToString();
+                    txtLastName.Text = dgvCustomers.CurrentRow.Cells[2].Value.ToString();
+                    mtxtTelephone1.Text = dgvCustomers.CurrentRow.Cells[3].Value.ToString();
+                    mtxtTelephone2.Text = dgvCustomers.CurrentRow.Cells[4].Value.ToString();
+                    mtxtIdentityNumber.Text = dgvCustomers.CurrentRow.Cells[5].Value.ToString();
+                    txtMail.Text = dgvCustomers.CurrentRow.Cells[6].Value.ToString();
+                    cmbCities.SelectedValue = Convert.ToInt32(dgvCustomers.CurrentRow.Cells[7].Value);
+                    cmbTowns.SelectedValue = Convert.ToInt32(dgvCustomers.CurrentRow.Cells[8].Value);
+                    rtxtAddress.Text = dgvCustomers.CurrentRow.Cells[9].Value.ToString();
+                    txtTaxAdminisration.Text = dgvCustomers.CurrentRow.Cells[10].Value.ToString();
+                }
+                catch 
+                {
+                    
+                }
+                
             }
         }
-
         
 
         private void LoadTowns(int id)
         {
-            _sqlCommand = new SqlCommand("select * from Towns where City=@CityId", _connection.Connection());
-            _sqlCommand.Parameters.AddWithValue("@CityId", id);
-            SqlDataReader reader = _sqlCommand.ExecuteReader();
-            while (reader.Read())
-            {
-                cmbTowns.Properties.Items.Add(reader[1]);
-                comboBox1.Items.Add(reader[1]);
-                comboBox1.DisplayMember = "TownName";
-                comboBox1.ValueMember = "TownId";
-            }
-
-            //cmbTowns.DataSource = dgvTowns;
-            //DataTable dataTable = new DataTable();
-            //SqlDataAdapter adapter = new SqlDataAdapter("select * from Towns", _connection.Connection());
-            //adapter.Fill(dataTable);
-            //cmbTowns.DataSource = dataTable;
-            //cmbTowns.DisplayMember = "TownName";
-            //cmbTowns.ValueMember = "TownId";
-
-            //town = new Town();
-            //cmbTowns.DataSource = town.GetTowns(id);
-            //cmbTowns.SelectedIndex = 0;
-            //cmbTowns.DisplayMember = town.TownName;
-            //cmbTowns.Text = town.TownName;
-            ////cmbTowns.ValueMember = town.TownId.ToString();
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter adapter = new SqlDataAdapter("select * from Towns where City="+id, _connection.Connection());
+            adapter.Fill(dataTable);
+            cmbTowns.DataSource = dataTable;
+            cmbTowns.DisplayMember = "TownName";
+            cmbTowns.ValueMember = "TownId";
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -122,7 +101,7 @@ namespace TicariOtomasyon
             _sqlCommand.Parameters.AddWithValue("@IdentificationNumber", mtxtIdentityNumber.Text);
             _sqlCommand.Parameters.AddWithValue("@Mail", txtMail.Text);
             _sqlCommand.Parameters.AddWithValue("@City",Convert.ToInt32(cmbCities.SelectedValue));
-            //_sqlCommand.Parameters.AddWithValue("@Town", Convert.ToInt32(cmbTowns.SelectedValue));
+            _sqlCommand.Parameters.AddWithValue("@Town", Convert.ToInt32(cmbTowns.SelectedValue));
             _sqlCommand.Parameters.AddWithValue("@Address", rtxtAddress.Text);
             _sqlCommand.Parameters.AddWithValue("@TaxAdministration", txtTaxAdminisration.Text);
             _sqlCommand.ExecuteNonQuery();
@@ -143,7 +122,7 @@ namespace TicariOtomasyon
             _sqlCommand.Parameters.AddWithValue("@IdentificationNumber", mtxtIdentityNumber.Text);
             _sqlCommand.Parameters.AddWithValue("@Mail", txtMail.Text);
             _sqlCommand.Parameters.AddWithValue("@City", Convert.ToInt32(cmbCities.SelectedValue));
-            //_sqlCommand.Parameters.AddWithValue("@Town", Convert.ToInt32(cmbTowns.SelectedValue));
+            _sqlCommand.Parameters.AddWithValue("@Town", Convert.ToInt32(cmbTowns.SelectedValue));
             _sqlCommand.Parameters.AddWithValue("@Address", rtxtAddress.Text);
             _sqlCommand.Parameters.AddWithValue("@TaxAdministration", txtTaxAdminisration.Text);
             _sqlCommand.Parameters.AddWithValue("@CustomerId", txtId.Text);
@@ -156,7 +135,7 @@ namespace TicariOtomasyon
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            _sqlCommand = new SqlCommand("delete from Customer where CustomerId=@CustomerId", _connection.Connection());
+            _sqlCommand = new SqlCommand("delete from Customers where CustomerID=@CustomerId", _connection.Connection());
             _sqlCommand.Parameters.AddWithValue("@CustomerId",Convert.ToInt32(txtId.Text));
             _sqlCommand.ExecuteNonQuery();
             LoadCustomers();
@@ -179,24 +158,29 @@ namespace TicariOtomasyon
             mtxtIdentityNumber.Clear();
             mtxtTelephone1.Clear();
             mtxtTelephone2.Clear();
-            cmbCities.SelectedIndex = 0;
+            cmbCities.SelectedValue = 1;
             cmbTowns.SelectedIndex = 0;
             rtxtAddress.Clear();
         }
 
         private void cmbCities_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmbTowns.Properties.Items.Clear();
+            //comboBox1.Items.Clear();
             LoadTowns(Convert.ToInt32(cmbCities.SelectedIndex+1));
             
             cmbTowns.SelectedIndex = 0;
-            try
+        }
+
+        void GetTown(int id,int city)
+        {
+            _sqlCommand = new SqlCommand("select * from Towns where TownId=@Id and City=@City",
+                _connection.Connection());
+            _sqlCommand.Parameters.AddWithValue("@Id", id);
+            _sqlCommand.Parameters.AddWithValue("@City", city);
+            SqlDataReader reader = _sqlCommand.ExecuteReader();
+            while (reader.Read())
             {
-                dgvTowns.DataSource = town.GetTowns(Convert.ToInt32(cmbCities.SelectedValue));
-            }
-            catch 
-            {
-                
+                cmbTowns.SelectedItem = reader["TownName"];
             }
         }
     }
