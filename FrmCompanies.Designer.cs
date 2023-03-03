@@ -45,6 +45,8 @@
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.txtTaxAdminisration = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.txtCompanyName = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.mtxtTaxNumber = new System.Windows.Forms.MaskedTextBox();
             this.mtxtFax = new System.Windows.Forms.MaskedTextBox();
@@ -64,20 +66,18 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.txtCompanyName = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompanies)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaxAdminisration.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCompanyName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOffficialStatu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCompanyName.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvCompanies
@@ -290,6 +290,25 @@
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "Şirket Kontrol";
             // 
+            // txtCompanyName
+            // 
+            this.txtCompanyName.Location = new System.Drawing.Point(107, 89);
+            this.txtCompanyName.Name = "txtCompanyName";
+            this.txtCompanyName.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCompanyName.Properties.Appearance.Options.UseFont = true;
+            this.txtCompanyName.Size = new System.Drawing.Size(187, 24);
+            this.txtCompanyName.TabIndex = 39;
+            // 
+            // labelControl15
+            // 
+            this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelControl15.Appearance.Options.UseFont = true;
+            this.labelControl15.Location = new System.Drawing.Point(49, 92);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(52, 18);
+            this.labelControl15.TabIndex = 40;
+            this.labelControl15.Text = "Unvan :";
+            // 
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -477,25 +496,6 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID :";
             // 
-            // txtCompanyName
-            // 
-            this.txtCompanyName.Location = new System.Drawing.Point(107, 89);
-            this.txtCompanyName.Name = "txtCompanyName";
-            this.txtCompanyName.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCompanyName.Properties.Appearance.Options.UseFont = true;
-            this.txtCompanyName.Size = new System.Drawing.Size(187, 24);
-            this.txtCompanyName.TabIndex = 39;
-            // 
-            // labelControl15
-            // 
-            this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Location = new System.Drawing.Point(49, 92);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(52, 18);
-            this.labelControl15.TabIndex = 40;
-            this.labelControl15.Text = "Unvan :";
-            // 
             // FrmCompanies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -504,7 +504,7 @@
             this.Controls.Add(this.dgvCompanies);
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmCompanies";
-            this.Text = "FrmCompanies";
+            this.Text = "Şirketler";
             this.Load += new System.EventHandler(this.FrmCompanies_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompanies)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
@@ -513,12 +513,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCompanyName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOffficialStatu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCompanyName.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

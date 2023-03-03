@@ -384,7 +384,7 @@
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.dgvEmployees);
             this.Name = "FrmEmployees";
-            this.Text = "FrmEmployees";
+            this.Text = "Personel";
             this.Load += new System.EventHandler(this.FrmEmployees_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);

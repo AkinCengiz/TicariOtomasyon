@@ -42,8 +42,8 @@
             this.btnExpensesForm = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnBanks = new DevExpress.XtraBars.BarButtonItem();
+            this.btnContact = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
@@ -74,8 +74,8 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.btnExpensesForm, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem8, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem9, true);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem10, true);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem11, true);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnBanks, true);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnContact, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem12, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem14, true);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
@@ -166,6 +166,7 @@
             this.btnExpensesForm.ItemAppearance.Normal.Options.UseFont = true;
             this.btnExpensesForm.Name = "btnExpensesForm";
             this.btnExpensesForm.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnExpensesForm.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnExpensesForm_ItemClick);
             // 
             // barButtonItem8
             // 
@@ -188,26 +189,28 @@
             this.barButtonItem9.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem9.Name = "barButtonItem9";
             // 
-            // barButtonItem10
+            // btnBanks
             // 
-            this.barButtonItem10.Caption = "BANKALAR";
-            this.barButtonItem10.Id = 10;
-            this.barButtonItem10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.Image")));
-            this.barButtonItem10.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.LargeImage")));
-            this.barButtonItem10.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.barButtonItem10.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem10.Name = "barButtonItem10";
+            this.btnBanks.Caption = "BANKALAR";
+            this.btnBanks.Id = 10;
+            this.btnBanks.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.Image")));
+            this.btnBanks.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.LargeImage")));
+            this.btnBanks.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBanks.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnBanks.Name = "btnBanks";
+            this.btnBanks.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBanks_ItemClick);
             // 
-            // barButtonItem11
+            // btnContact
             // 
-            this.barButtonItem11.Caption = "REHBER";
-            this.barButtonItem11.Id = 11;
-            this.barButtonItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
-            this.barButtonItem11.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
-            this.barButtonItem11.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.barButtonItem11.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem11.Name = "barButtonItem11";
-            this.barButtonItem11.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnContact.Caption = "REHBER";
+            this.btnContact.Id = 11;
+            this.btnContact.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnContact.ImageOptions.Image")));
+            this.btnContact.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnContact.ImageOptions.LargeImage")));
+            this.btnContact.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnContact.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnContact.Name = "btnContact";
+            this.btnContact.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnContact.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnContact_ItemClick);
             // 
             // barButtonItem12
             // 
@@ -254,8 +257,8 @@
             this.btnExpensesForm,
             this.barButtonItem8,
             this.barButtonItem9,
-            this.barButtonItem10,
-            this.barButtonItem11,
+            this.btnBanks,
+            this.btnContact,
             this.barButtonItem12,
             this.barButtonItem13,
             this.barButtonItem14});
@@ -297,8 +300,8 @@
         private DevExpress.XtraBars.BarButtonItem btnExpensesForm;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
+        private DevExpress.XtraBars.BarButtonItem btnBanks;
+        private DevExpress.XtraBars.BarButtonItem btnContact;
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;

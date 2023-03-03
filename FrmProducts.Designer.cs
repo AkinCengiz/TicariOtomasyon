@@ -360,7 +360,7 @@
             this.Controls.Add(this.groupControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmProducts";
-            this.Text = "FrmProducts";
+            this.Text = "Ürünler";
             this.Load += new System.EventHandler(this.FrmProducts_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
