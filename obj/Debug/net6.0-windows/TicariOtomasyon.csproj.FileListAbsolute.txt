@@ -114,3 +114,4 @@ C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtoma
 C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmMail.resources
 C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmExpenses.resources
 C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmBanks.resources
+C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmInvoice.resources

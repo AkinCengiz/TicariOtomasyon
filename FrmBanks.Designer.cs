@@ -34,7 +34,6 @@
             this.cmbCities = new System.Windows.Forms.ComboBox();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.mtxtTelephone2 = new System.Windows.Forms.MaskedTextBox();
             this.mtxtAccountNumber = new System.Windows.Forms.MaskedTextBox();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
@@ -42,32 +41,33 @@
             this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.cmbCompanies = new System.Windows.Forms.ComboBox();
+            this.txtAccountType = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.txtMail = new DevExpress.XtraEditors.TextEdit();
+            this.txtOfficial = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.mtxtIban = new System.Windows.Forms.MaskedTextBox();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.txtFirstName = new DevExpress.XtraEditors.TextEdit();
+            this.txtBankName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtBranch = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.txtAccountType = new DevExpress.XtraEditors.TextEdit();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dtpBanksDate = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBanks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAccountType.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOfficial.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBankName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBranch.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAccountType.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvBanks
@@ -81,6 +81,7 @@
             this.dgvBanks.RowTemplate.Height = 25;
             this.dgvBanks.Size = new System.Drawing.Size(1547, 861);
             this.dgvBanks.TabIndex = 6;
+            this.dgvBanks.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBanks_CellClick);
             // 
             // cmbTowns
             // 
@@ -99,6 +100,7 @@
             this.cmbCities.Name = "cmbCities";
             this.cmbCities.Size = new System.Drawing.Size(242, 26);
             this.cmbCities.TabIndex = 8;
+            this.cmbCities.SelectedIndexChanged += new System.EventHandler(this.cmbCities_SelectedIndexChanged);
             // 
             // labelControl11
             // 
@@ -119,17 +121,6 @@
             this.labelControl10.Size = new System.Drawing.Size(33, 18);
             this.labelControl10.TabIndex = 29;
             this.labelControl10.Text = "İlçe :";
-            // 
-            // mtxtTelephone2
-            // 
-            this.mtxtTelephone2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mtxtTelephone2.Location = new System.Drawing.Point(103, 303);
-            this.mtxtTelephone2.Mask = "00/00/0000";
-            this.mtxtTelephone2.Name = "mtxtTelephone2";
-            this.mtxtTelephone2.Size = new System.Drawing.Size(242, 24);
-            this.mtxtTelephone2.TabIndex = 4;
-            this.mtxtTelephone2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.mtxtTelephone2.ValidatingType = typeof(System.DateTime);
             // 
             // mtxtAccountNumber
             // 
@@ -168,6 +159,7 @@
             this.btnAdd.Size = new System.Drawing.Size(150, 58);
             this.btnAdd.TabIndex = 19;
             this.btnAdd.Text = "KAYDET";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnClear
             // 
@@ -181,6 +173,7 @@
             this.btnClear.Size = new System.Drawing.Size(150, 57);
             this.btnClear.TabIndex = 23;
             this.btnClear.Text = "TEMİZLE";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnUpdate
             // 
@@ -194,6 +187,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(150, 58);
             this.btnUpdate.TabIndex = 21;
             this.btnUpdate.Text = "GÜNCELLE";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -207,27 +201,28 @@
             this.btnDelete.Size = new System.Drawing.Size(150, 58);
             this.btnDelete.TabIndex = 22;
             this.btnDelete.Text = "SİL";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.comboBox1);
+            this.groupControl1.Controls.Add(this.dtpBanksDate);
+            this.groupControl1.Controls.Add(this.cmbCompanies);
             this.groupControl1.Controls.Add(this.txtAccountType);
             this.groupControl1.Controls.Add(this.labelControl12);
             this.groupControl1.Controls.Add(this.cmbTowns);
             this.groupControl1.Controls.Add(this.cmbCities);
             this.groupControl1.Controls.Add(this.labelControl11);
             this.groupControl1.Controls.Add(this.labelControl10);
-            this.groupControl1.Controls.Add(this.mtxtTelephone2);
             this.groupControl1.Controls.Add(this.mtxtAccountNumber);
             this.groupControl1.Controls.Add(this.groupControl2);
             this.groupControl1.Controls.Add(this.labelControl8);
-            this.groupControl1.Controls.Add(this.txtMail);
+            this.groupControl1.Controls.Add(this.txtOfficial);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.labelControl6);
             this.groupControl1.Controls.Add(this.labelControl5);
             this.groupControl1.Controls.Add(this.mtxtIban);
             this.groupControl1.Controls.Add(this.labelControl4);
-            this.groupControl1.Controls.Add(this.txtFirstName);
+            this.groupControl1.Controls.Add(this.txtBankName);
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.txtBranch);
             this.groupControl1.Controls.Add(this.labelControl2);
@@ -240,6 +235,34 @@
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "Baanka Kontrol";
             // 
+            // cmbCompanies
+            // 
+            this.cmbCompanies.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cmbCompanies.FormattingEnabled = true;
+            this.cmbCompanies.Location = new System.Drawing.Point(103, 363);
+            this.cmbCompanies.Name = "cmbCompanies";
+            this.cmbCompanies.Size = new System.Drawing.Size(242, 26);
+            this.cmbCompanies.TabIndex = 34;
+            // 
+            // txtAccountType
+            // 
+            this.txtAccountType.Location = new System.Drawing.Point(103, 333);
+            this.txtAccountType.Name = "txtAccountType";
+            this.txtAccountType.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtAccountType.Properties.Appearance.Options.UseFont = true;
+            this.txtAccountType.Size = new System.Drawing.Size(242, 24);
+            this.txtAccountType.TabIndex = 33;
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelControl12.Appearance.Options.UseFont = true;
+            this.labelControl12.Location = new System.Drawing.Point(19, 336);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(78, 18);
+            this.labelControl12.TabIndex = 32;
+            this.labelControl12.Text = "Hesap Tipi :";
+            // 
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -250,14 +273,14 @@
             this.labelControl8.TabIndex = 14;
             this.labelControl8.Text = "Firma :";
             // 
-            // txtMail
+            // txtOfficial
             // 
-            this.txtMail.Location = new System.Drawing.Point(103, 273);
-            this.txtMail.Name = "txtMail";
-            this.txtMail.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtMail.Properties.Appearance.Options.UseFont = true;
-            this.txtMail.Size = new System.Drawing.Size(242, 24);
-            this.txtMail.TabIndex = 6;
+            this.txtOfficial.Location = new System.Drawing.Point(103, 273);
+            this.txtOfficial.Name = "txtOfficial";
+            this.txtOfficial.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtOfficial.Properties.Appearance.Options.UseFont = true;
+            this.txtOfficial.Size = new System.Drawing.Size(242, 24);
+            this.txtOfficial.TabIndex = 6;
             // 
             // labelControl7
             // 
@@ -283,7 +306,7 @@
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(54, 306);
+            this.labelControl5.Location = new System.Drawing.Point(54, 309);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(43, 18);
             this.labelControl5.TabIndex = 9;
@@ -310,14 +333,14 @@
             this.labelControl4.TabIndex = 6;
             this.labelControl4.Text = "Hesap No :";
             // 
-            // txtFirstName
+            // txtBankName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(103, 89);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtFirstName.Properties.Appearance.Options.UseFont = true;
-            this.txtFirstName.Size = new System.Drawing.Size(242, 24);
-            this.txtFirstName.TabIndex = 1;
+            this.txtBankName.Location = new System.Drawing.Point(103, 89);
+            this.txtBankName.Name = "txtBankName";
+            this.txtBankName.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtBankName.Properties.Appearance.Options.UseFont = true;
+            this.txtBankName.Size = new System.Drawing.Size(242, 24);
+            this.txtBankName.TabIndex = 1;
             // 
             // labelControl3
             // 
@@ -368,33 +391,13 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID :";
             // 
-            // labelControl12
+            // dtpBanksDate
             // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(19, 336);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(78, 18);
-            this.labelControl12.TabIndex = 32;
-            this.labelControl12.Text = "Hesap Tipi :";
-            // 
-            // txtAccountType
-            // 
-            this.txtAccountType.Location = new System.Drawing.Point(103, 333);
-            this.txtAccountType.Name = "txtAccountType";
-            this.txtAccountType.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtAccountType.Properties.Appearance.Options.UseFont = true;
-            this.txtAccountType.Size = new System.Drawing.Size(242, 24);
-            this.txtAccountType.TabIndex = 33;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(103, 363);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(242, 26);
-            this.comboBox1.TabIndex = 34;
+            this.dtpBanksDate.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpBanksDate.Location = new System.Drawing.Point(103, 303);
+            this.dtpBanksDate.Name = "dtpBanksDate";
+            this.dtpBanksDate.Size = new System.Drawing.Size(242, 26);
+            this.dtpBanksDate.TabIndex = 35;
             // 
             // FrmBanks
             // 
@@ -405,17 +408,18 @@
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmBanks";
             this.Text = "Bankalar";
+            this.Load += new System.EventHandler(this.FrmBanks_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBanks)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAccountType.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOfficial.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBankName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBranch.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAccountType.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -427,7 +431,6 @@
         private ComboBox cmbCities;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl10;
-        private MaskedTextBox mtxtTelephone2;
         private MaskedTextBox mtxtAccountNumber;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.SimpleButton btnAdd;
@@ -436,20 +439,21 @@
         private DevExpress.XtraEditors.SimpleButton btnDelete;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.TextEdit txtMail;
+        private DevExpress.XtraEditors.TextEdit txtOfficial;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private MaskedTextBox mtxtIban;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit txtFirstName;
+        private DevExpress.XtraEditors.TextEdit txtBankName;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.TextEdit txtBranch;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtId;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private ComboBox comboBox1;
+        private ComboBox cmbCompanies;
         private DevExpress.XtraEditors.TextEdit txtAccountType;
         private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DateTimePicker dtpBanksDate;
     }
 }

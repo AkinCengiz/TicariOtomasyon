@@ -94,5 +94,17 @@ namespace TicariOtomasyon
             }
             frmBanks.Show();
         }
+
+        private FrmInvoice frmInvoice;
+        private void btnInvoice_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmInvoice == null)
+            {
+                frmInvoice = new FrmInvoice();
+                frmInvoice.MdiParent = this;
+            }
+
+            frmInvoice.Show();
+        }
     }
 }

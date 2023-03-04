@@ -44,7 +44,7 @@
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.btnBanks = new DevExpress.XtraBars.BarButtonItem();
             this.btnContact = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnInvoice = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
@@ -76,7 +76,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem9, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnBanks, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnContact, true);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem12, true);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnInvoice, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem14, true);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
@@ -193,8 +193,8 @@
             // 
             this.btnBanks.Caption = "BANKALAR";
             this.btnBanks.Id = 10;
-            this.btnBanks.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.Image")));
-            this.btnBanks.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.LargeImage")));
+            this.btnBanks.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBanks.ImageOptions.Image")));
+            this.btnBanks.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBanks.ImageOptions.LargeImage")));
             this.btnBanks.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBanks.ItemAppearance.Normal.Options.UseFont = true;
             this.btnBanks.Name = "btnBanks";
@@ -212,16 +212,17 @@
             this.btnContact.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnContact.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnContact_ItemClick);
             // 
-            // barButtonItem12
+            // btnInvoice
             // 
-            this.barButtonItem12.Caption = "FATURALAR";
-            this.barButtonItem12.Id = 12;
-            this.barButtonItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
-            this.barButtonItem12.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
-            this.barButtonItem12.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.barButtonItem12.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem12.Name = "barButtonItem12";
-            this.barButtonItem12.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnInvoice.Caption = "FATURALAR";
+            this.btnInvoice.Id = 12;
+            this.btnInvoice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
+            this.btnInvoice.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
+            this.btnInvoice.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnInvoice.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnInvoice.Name = "btnInvoice";
+            this.btnInvoice.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnInvoice.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInvoice_ItemClick);
             // 
             // barButtonItem14
             // 
@@ -259,7 +260,7 @@
             this.barButtonItem9,
             this.btnBanks,
             this.btnContact,
-            this.barButtonItem12,
+            this.btnInvoice,
             this.barButtonItem13,
             this.barButtonItem14});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
@@ -302,7 +303,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.BarButtonItem btnBanks;
         private DevExpress.XtraBars.BarButtonItem btnContact;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.BarButtonItem btnInvoice;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;
         private DevExpress.XtraBars.Ribbon.RibbonPage TİCARİ;
