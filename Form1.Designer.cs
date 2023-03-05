@@ -41,13 +41,15 @@
             this.btnEmployeesForm = new DevExpress.XtraBars.BarButtonItem();
             this.btnExpensesForm = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnNotes = new DevExpress.XtraBars.BarButtonItem();
             this.btnBanks = new DevExpress.XtraBars.BarButtonItem();
             this.btnContact = new DevExpress.XtraBars.BarButtonItem();
             this.btnInvoice = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.btnMovement = new DevExpress.XtraBars.BarButtonItem();
+            this.btnReport = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -73,10 +75,12 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.btnEmployeesForm, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnExpensesForm, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem8, true);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem9, true);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnNotes, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnBanks, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnContact, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnInvoice, true);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnMovement, true);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnReport);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem14, true);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
@@ -179,15 +183,16 @@
             this.barButtonItem8.Name = "barButtonItem8";
             this.barButtonItem8.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
-            // barButtonItem9
+            // btnNotes
             // 
-            this.barButtonItem9.Caption = "NOTLAR";
-            this.barButtonItem9.Id = 9;
-            this.barButtonItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
-            this.barButtonItem9.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
-            this.barButtonItem9.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.barButtonItem9.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem9.Name = "barButtonItem9";
+            this.btnNotes.Caption = "NOTLAR";
+            this.btnNotes.Id = 9;
+            this.btnNotes.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnNotes.ImageOptions.Image")));
+            this.btnNotes.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnNotes.ImageOptions.LargeImage")));
+            this.btnNotes.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnNotes.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnNotes.Name = "btnNotes";
+            this.btnNotes.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNotes_ItemClick);
             // 
             // btnBanks
             // 
@@ -216,8 +221,8 @@
             // 
             this.btnInvoice.Caption = "FATURALAR";
             this.btnInvoice.Id = 12;
-            this.btnInvoice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
-            this.btnInvoice.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
+            this.btnInvoice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInvoice.ImageOptions.Image")));
+            this.btnInvoice.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnInvoice.ImageOptions.LargeImage")));
             this.btnInvoice.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnInvoice.ItemAppearance.Normal.Options.UseFont = true;
             this.btnInvoice.Name = "btnInvoice";
@@ -257,18 +262,43 @@
             this.btnEmployeesForm,
             this.btnExpensesForm,
             this.barButtonItem8,
-            this.barButtonItem9,
+            this.btnNotes,
             this.btnBanks,
             this.btnContact,
             this.btnInvoice,
             this.barButtonItem13,
-            this.barButtonItem14});
+            this.barButtonItem14,
+            this.btnMovement,
+            this.btnReport});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 15;
+            this.ribbonControl1.MaxItemId = 17;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.TİCARİ});
             this.ribbonControl1.Size = new System.Drawing.Size(1912, 150);
+            // 
+            // btnMovement
+            // 
+            this.btnMovement.Caption = "HAREKETLER";
+            this.btnMovement.Id = 15;
+            this.btnMovement.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.btnMovement.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.btnMovement.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMovement.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnMovement.Name = "btnMovement";
+            this.btnMovement.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnMovement.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMovement_ItemClick);
+            // 
+            // btnReport
+            // 
+            this.btnReport.Caption = "RAPORLAR";
+            this.btnReport.Id = 16;
+            this.btnReport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+            this.btnReport.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
+            this.btnReport.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnReport.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnReport.Name = "btnReport";
+            this.btnReport.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // Form1
             // 
@@ -300,7 +330,7 @@
         private DevExpress.XtraBars.BarButtonItem btnEmployeesForm;
         private DevExpress.XtraBars.BarButtonItem btnExpensesForm;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.BarButtonItem btnNotes;
         private DevExpress.XtraBars.BarButtonItem btnBanks;
         private DevExpress.XtraBars.BarButtonItem btnContact;
         private DevExpress.XtraBars.BarButtonItem btnInvoice;
@@ -308,5 +338,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;
         private DevExpress.XtraBars.Ribbon.RibbonPage TİCARİ;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.BarButtonItem btnMovement;
+        private DevExpress.XtraBars.BarButtonItem btnReport;
     }
 }

@@ -106,5 +106,28 @@ namespace TicariOtomasyon
 
             frmInvoice.Show();
         }
+
+        private FrmNotes frmNotes;
+        private void btnNotes_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmNotes == null)
+            {
+                frmNotes = new FrmNotes();
+                frmNotes.MdiParent = this;
+            }
+
+            frmNotes.Show();
+        }
+
+        private FrmMovements frmMovements;
+        private void btnMovement_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmMovements == null)
+            {
+                frmMovements = new FrmMovements();
+                frmMovements.MdiParent = this;
+            }
+            frmMovements.Show();
+        }
     }
 }

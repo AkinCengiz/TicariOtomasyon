@@ -82,7 +82,7 @@ namespace TicariOtomasyon
         private void LoadTowns(int id)
         {
             DataTable dataTable = new DataTable();
-            SqlDataAdapter adapter = new SqlDataAdapter("select * from Towns where City="+id, _connection.Connection());
+            SqlDataAdapter adapter = new SqlDataAdapter("select * from Towns where City="+id+" order by TownName asc", _connection.Connection());
             adapter.Fill(dataTable);
             cmbTowns.DataSource = dataTable;
             cmbTowns.DisplayMember = "TownName";
