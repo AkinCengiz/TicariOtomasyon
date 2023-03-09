@@ -92,7 +92,7 @@
             this.groupControl1.Location = new System.Drawing.Point(1620, 0);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(306, 900);
-            this.groupControl1.TabIndex = 1;
+            this.groupControl1.TabIndex = 123;
             this.groupControl1.Text = "Ürün Kontrol";
             // 
             // groupControl2
@@ -118,7 +118,7 @@
             this.btnAdd.Location = new System.Drawing.Point(16, 19);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(135, 58);
-            this.btnAdd.TabIndex = 19;
+            this.btnAdd.TabIndex = 9;
             this.btnAdd.Text = "KAYDET";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -167,7 +167,7 @@
             this.rtxtExplanation.Location = new System.Drawing.Point(104, 282);
             this.rtxtExplanation.Name = "rtxtExplanation";
             this.rtxtExplanation.Size = new System.Drawing.Size(190, 161);
-            this.rtxtExplanation.TabIndex = 20;
+            this.rtxtExplanation.TabIndex = 8;
             this.rtxtExplanation.Text = "";
             // 
             // nudAmount
@@ -176,7 +176,7 @@
             this.nudAmount.Location = new System.Drawing.Point(104, 190);
             this.nudAmount.Name = "nudAmount";
             this.nudAmount.Size = new System.Drawing.Size(190, 26);
-            this.nudAmount.TabIndex = 18;
+            this.nudAmount.TabIndex = 5;
             // 
             // labelControl9
             // 
@@ -197,7 +197,7 @@
             this.txtSalePrice.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.txtSalePrice.Properties.MaskSettings.Set("mask", "n");
             this.txtSalePrice.Size = new System.Drawing.Size(190, 24);
-            this.txtSalePrice.TabIndex = 15;
+            this.txtSalePrice.TabIndex = 7;
             // 
             // labelControl8
             // 
@@ -218,7 +218,7 @@
             this.txtPurchasePrice.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.txtPurchasePrice.Properties.MaskSettings.Set("mask", "n");
             this.txtPurchasePrice.Size = new System.Drawing.Size(190, 24);
-            this.txtPurchasePrice.TabIndex = 13;
+            this.txtPurchasePrice.TabIndex = 6;
             // 
             // labelControl7
             // 
@@ -257,7 +257,7 @@
             this.mtxtYear.Mask = "0000";
             this.mtxtYear.Name = "mtxtYear";
             this.mtxtYear.Size = new System.Drawing.Size(190, 26);
-            this.mtxtYear.TabIndex = 8;
+            this.mtxtYear.TabIndex = 4;
             this.mtxtYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.mtxtYear.ValidatingType = typeof(int);
             // 
@@ -268,7 +268,7 @@
             this.txtModel.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtModel.Properties.Appearance.Options.UseFont = true;
             this.txtModel.Size = new System.Drawing.Size(190, 24);
-            this.txtModel.TabIndex = 7;
+            this.txtModel.TabIndex = 3;
             // 
             // labelControl4
             // 
@@ -287,7 +287,7 @@
             this.txtProductName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtProductName.Properties.Appearance.Options.UseFont = true;
             this.txtProductName.Size = new System.Drawing.Size(190, 24);
-            this.txtProductName.TabIndex = 5;
+            this.txtProductName.TabIndex = 1;
             // 
             // labelControl3
             // 
@@ -306,7 +306,7 @@
             this.txtBrand.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtBrand.Properties.Appearance.Options.UseFont = true;
             this.txtBrand.Size = new System.Drawing.Size(190, 24);
-            this.txtBrand.TabIndex = 3;
+            this.txtBrand.TabIndex = 2;
             // 
             // labelControl2
             // 
@@ -326,7 +326,7 @@
             this.txtId.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtId.Properties.Appearance.Options.UseFont = true;
             this.txtId.Size = new System.Drawing.Size(190, 24);
-            this.txtId.TabIndex = 1;
+            this.txtId.TabIndex = 100;
             // 
             // labelControl1
             // 

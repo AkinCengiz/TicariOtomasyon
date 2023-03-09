@@ -159,7 +159,7 @@
             this.chkCancel.Location = new System.Drawing.Point(107, 276);
             this.chkCancel.Name = "chkCancel";
             this.chkCancel.Size = new System.Drawing.Size(103, 22);
-            this.chkCancel.TabIndex = 79;
+            this.chkCancel.TabIndex = 9;
             this.chkCancel.Text = "Fatura İptal";
             this.chkCancel.UseVisualStyleBackColor = true;
             // 
@@ -170,7 +170,7 @@
             this.rdbIndividual.Location = new System.Drawing.Point(219, 184);
             this.rdbIndividual.Name = "rdbIndividual";
             this.rdbIndividual.Size = new System.Drawing.Size(75, 22);
-            this.rdbIndividual.TabIndex = 78;
+            this.rdbIndividual.TabIndex = 6;
             this.rdbIndividual.Text = "Bireysel";
             this.rdbIndividual.UseVisualStyleBackColor = true;
             this.rdbIndividual.CheckedChanged += new System.EventHandler(this.rdbIndividual_CheckedChanged);
@@ -183,7 +183,7 @@
             this.rdbCorporate.Location = new System.Drawing.Point(107, 184);
             this.rdbCorporate.Name = "rdbCorporate";
             this.rdbCorporate.Size = new System.Drawing.Size(86, 22);
-            this.rdbCorporate.TabIndex = 77;
+            this.rdbCorporate.TabIndex = 5;
             this.rdbCorporate.TabStop = true;
             this.rdbCorporate.Text = "Kurumsal";
             this.rdbCorporate.UseVisualStyleBackColor = true;
@@ -196,7 +196,7 @@
             this.dtpHours.Location = new System.Drawing.Point(107, 152);
             this.dtpHours.Name = "dtpHours";
             this.dtpHours.Size = new System.Drawing.Size(276, 26);
-            this.dtpHours.TabIndex = 76;
+            this.dtpHours.TabIndex = 4;
             // 
             // labelControl16
             // 
@@ -215,7 +215,7 @@
             this.dtpDate.Location = new System.Drawing.Point(107, 120);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(276, 26);
-            this.dtpDate.TabIndex = 72;
+            this.dtpDate.TabIndex = 3;
             // 
             // txtSerial
             // 
@@ -227,7 +227,7 @@
             this.txtSerial.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtSerial.Properties.MaskSettings.Set("mask", "[A-Z]");
             this.txtSerial.Size = new System.Drawing.Size(276, 24);
-            this.txtSerial.TabIndex = 70;
+            this.txtSerial.TabIndex = 1;
             // 
             // labelControl15
             // 
@@ -246,7 +246,7 @@
             this.cmbEmployees.Location = new System.Drawing.Point(107, 244);
             this.cmbEmployees.Name = "cmbEmployees";
             this.cmbEmployees.Size = new System.Drawing.Size(276, 26);
-            this.cmbEmployees.TabIndex = 54;
+            this.cmbEmployees.TabIndex = 8;
             // 
             // cmbCustomers
             // 
@@ -255,7 +255,7 @@
             this.cmbCustomers.Location = new System.Drawing.Point(107, 212);
             this.cmbCustomers.Name = "cmbCustomers";
             this.cmbCustomers.Size = new System.Drawing.Size(276, 26);
-            this.cmbCustomers.TabIndex = 52;
+            this.cmbCustomers.TabIndex = 7;
             // 
             // labelControl11
             // 
@@ -301,7 +301,7 @@
             this.btnAdd.Location = new System.Drawing.Point(16, 19);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(163, 58);
-            this.btnAdd.TabIndex = 19;
+            this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "FATURA GİR";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -358,7 +358,7 @@
             this.txtInvoiceNumber.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
             this.txtInvoiceNumber.Properties.MaskSettings.Set("mask", "0");
             this.txtInvoiceNumber.Size = new System.Drawing.Size(276, 24);
-            this.txtInvoiceNumber.TabIndex = 42;
+            this.txtInvoiceNumber.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -388,7 +388,7 @@
             this.txtId.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtId.Properties.Appearance.Options.UseFont = true;
             this.txtId.Size = new System.Drawing.Size(276, 24);
-            this.txtId.TabIndex = 43;
+            this.txtId.TabIndex = 100;
             // 
             // labelControl1
             // 
@@ -427,7 +427,7 @@
             this.txtInvoice.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtInvoice.Properties.Appearance.Options.UseFont = true;
             this.txtInvoice.Size = new System.Drawing.Size(278, 24);
-            this.txtInvoice.TabIndex = 98;
+            this.txtInvoice.TabIndex = 5;
             // 
             // labelControl17
             // 
@@ -449,7 +449,7 @@
             this.txtUnitPrice.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.txtUnitPrice.Properties.MaskSettings.Set("mask", "c");
             this.txtUnitPrice.Size = new System.Drawing.Size(278, 24);
-            this.txtUnitPrice.TabIndex = 95;
+            this.txtUnitPrice.TabIndex = 3;
             // 
             // labelControl9
             // 
@@ -471,7 +471,7 @@
             this.txtTotalPrice.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.txtTotalPrice.Properties.MaskSettings.Set("mask", "c");
             this.txtTotalPrice.Size = new System.Drawing.Size(278, 24);
-            this.txtTotalPrice.TabIndex = 93;
+            this.txtTotalPrice.TabIndex = 4;
             // 
             // labelControl8
             // 
@@ -490,7 +490,7 @@
             this.cmbProducts.Location = new System.Drawing.Point(104, 73);
             this.cmbProducts.Name = "cmbProducts";
             this.cmbProducts.Size = new System.Drawing.Size(278, 26);
-            this.cmbProducts.TabIndex = 91;
+            this.cmbProducts.TabIndex = 1;
             this.cmbProducts.SelectedIndexChanged += new System.EventHandler(this.cmbProducts_SelectedIndexChanged);
             // 
             // labelControl5
@@ -547,7 +547,7 @@
             this.simpleButton1.Location = new System.Drawing.Point(16, 19);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(172, 58);
-            this.simpleButton1.TabIndex = 19;
+            this.simpleButton1.TabIndex = 6;
             this.simpleButton1.Text = "EKLE";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
@@ -602,7 +602,7 @@
             this.txtAmount.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.txtAmount.Properties.MaskSettings.Set("mask", "n");
             this.txtAmount.Size = new System.Drawing.Size(278, 24);
-            this.txtAmount.TabIndex = 84;
+            this.txtAmount.TabIndex = 2;
             this.txtAmount.TextChanged += new System.EventHandler(this.txtAmount_TextChanged);
             // 
             // labelControl7

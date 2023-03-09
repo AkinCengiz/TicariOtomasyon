@@ -30,6 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmExpenses));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.txtSalaries = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.txtExtra = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.txtNaturalGas = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.txtInternet = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.cmbYear = new System.Windows.Forms.ComboBox();
             this.cmbMonth = new System.Windows.Forms.ComboBox();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
@@ -48,26 +56,18 @@
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.dgvExpenses = new System.Windows.Forms.DataGridView();
-            this.txtNaturalGas = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.txtInternet = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.txtExtra = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.txtSalaries = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSalaries.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtExtra.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNaturalGas.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInternet.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtElectric.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWater.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExpenses)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNaturalGas.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInternet.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtExtra.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSalaries.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -100,6 +100,94 @@
             this.groupControl1.TabIndex = 7;
             this.groupControl1.Text = "Fatura Kontrol";
             // 
+            // txtSalaries
+            // 
+            this.txtSalaries.Location = new System.Drawing.Point(107, 273);
+            this.txtSalaries.Name = "txtSalaries";
+            this.txtSalaries.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtSalaries.Properties.Appearance.Options.UseFont = true;
+            this.txtSalaries.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtSalaries.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
+            this.txtSalaries.Properties.MaskSettings.Set("mask", "n");
+            this.txtSalaries.Size = new System.Drawing.Size(187, 24);
+            this.txtSalaries.TabIndex = 7;
+            // 
+            // labelControl14
+            // 
+            this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelControl14.Appearance.Options.UseFont = true;
+            this.labelControl14.Location = new System.Drawing.Point(37, 276);
+            this.labelControl14.Name = "labelControl14";
+            this.labelControl14.Size = new System.Drawing.Size(60, 18);
+            this.labelControl14.TabIndex = 38;
+            this.labelControl14.Text = "Maaşlar :";
+            // 
+            // txtExtra
+            // 
+            this.txtExtra.Location = new System.Drawing.Point(107, 303);
+            this.txtExtra.Name = "txtExtra";
+            this.txtExtra.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtExtra.Properties.Appearance.Options.UseFont = true;
+            this.txtExtra.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtExtra.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
+            this.txtExtra.Properties.MaskSettings.Set("mask", "n");
+            this.txtExtra.Size = new System.Drawing.Size(187, 24);
+            this.txtExtra.TabIndex = 8;
+            // 
+            // labelControl13
+            // 
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelControl13.Appearance.Options.UseFont = true;
+            this.labelControl13.Location = new System.Drawing.Point(47, 306);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(50, 18);
+            this.labelControl13.TabIndex = 36;
+            this.labelControl13.Text = "Ekstra :";
+            // 
+            // txtNaturalGas
+            // 
+            this.txtNaturalGas.Location = new System.Drawing.Point(107, 213);
+            this.txtNaturalGas.Name = "txtNaturalGas";
+            this.txtNaturalGas.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNaturalGas.Properties.Appearance.Options.UseFont = true;
+            this.txtNaturalGas.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtNaturalGas.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
+            this.txtNaturalGas.Properties.MaskSettings.Set("mask", "n");
+            this.txtNaturalGas.Size = new System.Drawing.Size(187, 24);
+            this.txtNaturalGas.TabIndex = 5;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Location = new System.Drawing.Point(28, 216);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(69, 18);
+            this.labelControl5.TabIndex = 34;
+            this.labelControl5.Text = "Doğalgaz :";
+            // 
+            // txtInternet
+            // 
+            this.txtInternet.Location = new System.Drawing.Point(107, 243);
+            this.txtInternet.Name = "txtInternet";
+            this.txtInternet.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtInternet.Properties.Appearance.Options.UseFont = true;
+            this.txtInternet.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtInternet.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
+            this.txtInternet.Properties.MaskSettings.Set("mask", "n");
+            this.txtInternet.Size = new System.Drawing.Size(187, 24);
+            this.txtInternet.TabIndex = 6;
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelControl12.Appearance.Options.UseFont = true;
+            this.labelControl12.Location = new System.Drawing.Point(34, 246);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(63, 18);
+            this.labelControl12.TabIndex = 33;
+            this.labelControl12.Text = "İnternet :";
+            // 
             // cmbYear
             // 
             this.cmbYear.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -114,7 +202,7 @@
             this.cmbYear.Location = new System.Drawing.Point(107, 121);
             this.cmbYear.Name = "cmbYear";
             this.cmbYear.Size = new System.Drawing.Size(187, 26);
-            this.cmbYear.TabIndex = 9;
+            this.cmbYear.TabIndex = 2;
             // 
             // cmbMonth
             // 
@@ -136,7 +224,7 @@
             this.cmbMonth.Location = new System.Drawing.Point(107, 89);
             this.cmbMonth.Name = "cmbMonth";
             this.cmbMonth.Size = new System.Drawing.Size(187, 26);
-            this.cmbMonth.TabIndex = 8;
+            this.cmbMonth.TabIndex = 1;
             // 
             // labelControl11
             // 
@@ -182,7 +270,7 @@
             this.btnAdd.Location = new System.Drawing.Point(16, 19);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(135, 58);
-            this.btnAdd.TabIndex = 19;
+            this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "KAYDET";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -234,7 +322,7 @@
             this.rtxtNotes.Location = new System.Drawing.Point(107, 333);
             this.rtxtNotes.Name = "rtxtNotes";
             this.rtxtNotes.Size = new System.Drawing.Size(187, 96);
-            this.rtxtNotes.TabIndex = 7;
+            this.rtxtNotes.TabIndex = 9;
             this.rtxtNotes.Text = "";
             // 
             // labelControl9
@@ -257,7 +345,7 @@
             this.txtElectric.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
             this.txtElectric.Properties.MaskSettings.Set("mask", "n");
             this.txtElectric.Size = new System.Drawing.Size(187, 24);
-            this.txtElectric.TabIndex = 1;
+            this.txtElectric.TabIndex = 3;
             // 
             // labelControl3
             // 
@@ -279,7 +367,7 @@
             this.txtWater.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
             this.txtWater.Properties.MaskSettings.Set("mask", "n");
             this.txtWater.Size = new System.Drawing.Size(187, 24);
-            this.txtWater.TabIndex = 2;
+            this.txtWater.TabIndex = 4;
             // 
             // labelControl2
             // 
@@ -299,7 +387,7 @@
             this.txtId.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtId.Properties.Appearance.Options.UseFont = true;
             this.txtId.Size = new System.Drawing.Size(187, 24);
-            this.txtId.TabIndex = 1;
+            this.txtId.TabIndex = 100;
             // 
             // labelControl1
             // 
@@ -324,94 +412,6 @@
             this.dgvExpenses.TabIndex = 8;
             this.dgvExpenses.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvExpenses_CellClick);
             // 
-            // txtNaturalGas
-            // 
-            this.txtNaturalGas.Location = new System.Drawing.Point(107, 213);
-            this.txtNaturalGas.Name = "txtNaturalGas";
-            this.txtNaturalGas.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNaturalGas.Properties.Appearance.Options.UseFont = true;
-            this.txtNaturalGas.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtNaturalGas.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
-            this.txtNaturalGas.Properties.MaskSettings.Set("mask", "n");
-            this.txtNaturalGas.Size = new System.Drawing.Size(187, 24);
-            this.txtNaturalGas.TabIndex = 31;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(28, 216);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(69, 18);
-            this.labelControl5.TabIndex = 34;
-            this.labelControl5.Text = "Doğalgaz :";
-            // 
-            // txtInternet
-            // 
-            this.txtInternet.Location = new System.Drawing.Point(107, 243);
-            this.txtInternet.Name = "txtInternet";
-            this.txtInternet.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtInternet.Properties.Appearance.Options.UseFont = true;
-            this.txtInternet.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtInternet.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
-            this.txtInternet.Properties.MaskSettings.Set("mask", "n");
-            this.txtInternet.Size = new System.Drawing.Size(187, 24);
-            this.txtInternet.TabIndex = 32;
-            // 
-            // labelControl12
-            // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(34, 246);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(63, 18);
-            this.labelControl12.TabIndex = 33;
-            this.labelControl12.Text = "İnternet :";
-            // 
-            // txtExtra
-            // 
-            this.txtExtra.Location = new System.Drawing.Point(107, 303);
-            this.txtExtra.Name = "txtExtra";
-            this.txtExtra.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtExtra.Properties.Appearance.Options.UseFont = true;
-            this.txtExtra.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtExtra.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
-            this.txtExtra.Properties.MaskSettings.Set("mask", "n");
-            this.txtExtra.Size = new System.Drawing.Size(187, 24);
-            this.txtExtra.TabIndex = 35;
-            // 
-            // labelControl13
-            // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(47, 306);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(50, 18);
-            this.labelControl13.TabIndex = 36;
-            this.labelControl13.Text = "Ekstra :";
-            // 
-            // txtSalaries
-            // 
-            this.txtSalaries.Location = new System.Drawing.Point(107, 273);
-            this.txtSalaries.Name = "txtSalaries";
-            this.txtSalaries.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtSalaries.Properties.Appearance.Options.UseFont = true;
-            this.txtSalaries.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtSalaries.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
-            this.txtSalaries.Properties.MaskSettings.Set("mask", "n");
-            this.txtSalaries.Size = new System.Drawing.Size(187, 24);
-            this.txtSalaries.TabIndex = 37;
-            // 
-            // labelControl14
-            // 
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Location = new System.Drawing.Point(37, 276);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(60, 18);
-            this.labelControl14.TabIndex = 38;
-            this.labelControl14.Text = "Maaşlar :";
-            // 
             // FrmExpenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -425,16 +425,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSalaries.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtExtra.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNaturalGas.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtInternet.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtElectric.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWater.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExpenses)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNaturalGas.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtInternet.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtExtra.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSalaries.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

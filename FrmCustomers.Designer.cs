@@ -185,7 +185,7 @@
             this.btnAdd.Location = new System.Drawing.Point(16, 19);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(135, 58);
-            this.btnAdd.TabIndex = 19;
+            this.btnAdd.TabIndex = 11;
             this.btnAdd.Text = "KAYDET";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -375,7 +375,7 @@
             this.txtId.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtId.Properties.Appearance.Options.UseFont = true;
             this.txtId.Size = new System.Drawing.Size(187, 24);
-            this.txtId.TabIndex = 1;
+            this.txtId.TabIndex = 100;
             // 
             // labelControl1
             // 

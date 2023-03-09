@@ -94,7 +94,7 @@
             this.rtxtMessage.Location = new System.Drawing.Point(142, 142);
             this.rtxtMessage.Name = "rtxtMessage";
             this.rtxtMessage.Size = new System.Drawing.Size(384, 317);
-            this.rtxtMessage.TabIndex = 5;
+            this.rtxtMessage.TabIndex = 3;
             this.rtxtMessage.Text = "";
             // 
             // btnSendMail
@@ -105,7 +105,7 @@
             this.btnSendMail.Location = new System.Drawing.Point(403, 465);
             this.btnSendMail.Name = "btnSendMail";
             this.btnSendMail.Size = new System.Drawing.Size(123, 54);
-            this.btnSendMail.TabIndex = 6;
+            this.btnSendMail.TabIndex = 4;
             this.btnSendMail.Text = "Gönder";
             this.btnSendMail.Click += new System.EventHandler(this.btnSendMail_Click);
             // 

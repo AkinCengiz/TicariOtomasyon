@@ -75,7 +75,7 @@
             this.cmbTowns.Location = new System.Drawing.Point(107, 377);
             this.cmbTowns.Name = "cmbTowns";
             this.cmbTowns.Size = new System.Drawing.Size(187, 26);
-            this.cmbTowns.TabIndex = 9;
+            this.cmbTowns.TabIndex = 8;
             // 
             // cmbCities
             // 
@@ -84,7 +84,7 @@
             this.cmbCities.Location = new System.Drawing.Point(107, 345);
             this.cmbCities.Name = "cmbCities";
             this.cmbCities.Size = new System.Drawing.Size(187, 26);
-            this.cmbCities.TabIndex = 8;
+            this.cmbCities.TabIndex = 7;
             this.cmbCities.SelectedIndexChanged += new System.EventHandler(this.cmbCities_SelectedIndexChanged);
             // 
             // labelControl11
@@ -141,7 +141,7 @@
             this.btnAdd.Location = new System.Drawing.Point(16, 19);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(135, 58);
-            this.btnAdd.TabIndex = 19;
+            this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "KAYDET";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -193,7 +193,7 @@
             this.rtxtAddress.Location = new System.Drawing.Point(107, 243);
             this.rtxtAddress.Name = "rtxtAddress";
             this.rtxtAddress.Size = new System.Drawing.Size(187, 96);
-            this.rtxtAddress.TabIndex = 7;
+            this.rtxtAddress.TabIndex = 6;
             this.rtxtAddress.Text = "";
             // 
             // labelControl9
@@ -213,7 +213,7 @@
             this.txtDuty.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtDuty.Properties.Appearance.Options.UseFont = true;
             this.txtDuty.Size = new System.Drawing.Size(187, 24);
-            this.txtDuty.TabIndex = 10;
+            this.txtDuty.TabIndex = 9;
             // 
             // labelControl8
             // 
@@ -232,7 +232,7 @@
             this.txtMail.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMail.Properties.Appearance.Options.UseFont = true;
             this.txtMail.Size = new System.Drawing.Size(187, 24);
-            this.txtMail.TabIndex = 6;
+            this.txtMail.TabIndex = 5;
             // 
             // labelControl7
             // 
@@ -261,7 +261,7 @@
             this.mtxtIdentityNumber.Mask = "00000000000";
             this.mtxtIdentityNumber.Name = "mtxtIdentityNumber";
             this.mtxtIdentityNumber.Size = new System.Drawing.Size(187, 24);
-            this.mtxtIdentityNumber.TabIndex = 5;
+            this.mtxtIdentityNumber.TabIndex = 4;
             this.mtxtIdentityNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.mtxtIdentityNumber.ValidatingType = typeof(int);
             // 
@@ -321,7 +321,7 @@
             this.txtId.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtId.Properties.Appearance.Options.UseFont = true;
             this.txtId.Size = new System.Drawing.Size(187, 24);
-            this.txtId.TabIndex = 1;
+            this.txtId.TabIndex = 100;
             // 
             // labelControl1
             // 
@@ -360,7 +360,7 @@
             this.groupControl1.Location = new System.Drawing.Point(1604, 0);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(306, 861);
-            this.groupControl1.TabIndex = 5;
+            this.groupControl1.TabIndex = 50;
             this.groupControl1.Text = "Personel Kontrol";
             // 
             // dgvEmployees

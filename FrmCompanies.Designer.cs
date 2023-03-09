@@ -100,7 +100,7 @@
             this.cmbTowns.Location = new System.Drawing.Point(107, 497);
             this.cmbTowns.Name = "cmbTowns";
             this.cmbTowns.Size = new System.Drawing.Size(187, 26);
-            this.cmbTowns.TabIndex = 9;
+            this.cmbTowns.TabIndex = 12;
             // 
             // cmbCities
             // 
@@ -109,7 +109,7 @@
             this.cmbCities.Location = new System.Drawing.Point(107, 465);
             this.cmbCities.Name = "cmbCities";
             this.cmbCities.Size = new System.Drawing.Size(187, 26);
-            this.cmbCities.TabIndex = 8;
+            this.cmbCities.TabIndex = 11;
             this.cmbCities.SelectedIndexChanged += new System.EventHandler(this.cmbCities_SelectedIndexChanged);
             // 
             // labelControl11
@@ -139,7 +139,7 @@
             this.mtxtTelephone2.Mask = "(999) 000 00 00";
             this.mtxtTelephone2.Name = "mtxtTelephone2";
             this.mtxtTelephone2.Size = new System.Drawing.Size(187, 24);
-            this.mtxtTelephone2.TabIndex = 4;
+            this.mtxtTelephone2.TabIndex = 6;
             this.mtxtTelephone2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // mtxtTelephone1
@@ -149,7 +149,7 @@
             this.mtxtTelephone1.Mask = "(999) 000 00 00";
             this.mtxtTelephone1.Name = "mtxtTelephone1";
             this.mtxtTelephone1.Size = new System.Drawing.Size(187, 24);
-            this.mtxtTelephone1.TabIndex = 3;
+            this.mtxtTelephone1.TabIndex = 5;
             this.mtxtTelephone1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // groupControl2
@@ -176,7 +176,7 @@
             this.btnAdd.Location = new System.Drawing.Point(16, 19);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(135, 58);
-            this.btnAdd.TabIndex = 19;
+            this.btnAdd.TabIndex = 15;
             this.btnAdd.Text = "KAYDET";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -228,7 +228,7 @@
             this.rtxtAddress.Location = new System.Drawing.Point(107, 363);
             this.rtxtAddress.Name = "rtxtAddress";
             this.rtxtAddress.Size = new System.Drawing.Size(187, 96);
-            this.rtxtAddress.TabIndex = 7;
+            this.rtxtAddress.TabIndex = 10;
             this.rtxtAddress.Text = "";
             // 
             // labelControl9
@@ -248,7 +248,7 @@
             this.txtTaxAdminisration.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtTaxAdminisration.Properties.Appearance.Options.UseFont = true;
             this.txtTaxAdminisration.Size = new System.Drawing.Size(187, 24);
-            this.txtTaxAdminisration.TabIndex = 10;
+            this.txtTaxAdminisration.TabIndex = 13;
             // 
             // groupControl1
             // 
@@ -297,7 +297,7 @@
             this.txtCompanyName.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtCompanyName.Properties.Appearance.Options.UseFont = true;
             this.txtCompanyName.Size = new System.Drawing.Size(187, 24);
-            this.txtCompanyName.TabIndex = 39;
+            this.txtCompanyName.TabIndex = 1;
             // 
             // labelControl15
             // 
@@ -326,7 +326,7 @@
             this.mtxtTaxNumber.Mask = "00000000000";
             this.mtxtTaxNumber.Name = "mtxtTaxNumber";
             this.mtxtTaxNumber.Size = new System.Drawing.Size(187, 24);
-            this.mtxtTaxNumber.TabIndex = 37;
+            this.mtxtTaxNumber.TabIndex = 14;
             this.mtxtTaxNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.mtxtTaxNumber.ValidatingType = typeof(int);
             // 
@@ -337,7 +337,7 @@
             this.mtxtFax.Mask = "(999) 000 00 00";
             this.mtxtFax.Name = "mtxtFax";
             this.mtxtFax.Size = new System.Drawing.Size(187, 24);
-            this.mtxtFax.TabIndex = 35;
+            this.mtxtFax.TabIndex = 8;
             this.mtxtFax.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // labelControl14
@@ -357,7 +357,7 @@
             this.mtxtTelephone3.Mask = "(999) 000 00 00";
             this.mtxtTelephone3.Name = "mtxtTelephone3";
             this.mtxtTelephone3.Size = new System.Drawing.Size(187, 24);
-            this.mtxtTelephone3.TabIndex = 33;
+            this.mtxtTelephone3.TabIndex = 7;
             this.mtxtTelephone3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // labelControl13
@@ -377,7 +377,7 @@
             this.txtOffficialStatu.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtOffficialStatu.Properties.Appearance.Options.UseFont = true;
             this.txtOffficialStatu.Size = new System.Drawing.Size(187, 24);
-            this.txtOffficialStatu.TabIndex = 31;
+            this.txtOffficialStatu.TabIndex = 4;
             // 
             // labelControl12
             // 
@@ -406,7 +406,7 @@
             this.txtMail.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMail.Properties.Appearance.Options.UseFont = true;
             this.txtMail.Size = new System.Drawing.Size(187, 24);
-            this.txtMail.TabIndex = 6;
+            this.txtMail.TabIndex = 9;
             // 
             // labelControl7
             // 
@@ -445,7 +445,7 @@
             this.txtFirstName.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtFirstName.Properties.Appearance.Options.UseFont = true;
             this.txtFirstName.Size = new System.Drawing.Size(187, 24);
-            this.txtFirstName.TabIndex = 1;
+            this.txtFirstName.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -464,7 +464,7 @@
             this.txtLastName.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtLastName.Properties.Appearance.Options.UseFont = true;
             this.txtLastName.Size = new System.Drawing.Size(187, 24);
-            this.txtLastName.TabIndex = 2;
+            this.txtLastName.TabIndex = 3;
             // 
             // labelControl2
             // 

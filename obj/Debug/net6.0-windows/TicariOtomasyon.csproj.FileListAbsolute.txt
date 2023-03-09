@@ -117,3 +117,7 @@ C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtoma
 C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmInvoice.resources
 C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmNotes.resources
 C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmMovements.resources
+C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmLogin.resources
+C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmReports.resources
+C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmStocks.resources
+C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmSettings.resources

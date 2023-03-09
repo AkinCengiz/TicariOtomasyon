@@ -29,6 +29,7 @@ namespace TicariOtomasyon
 
         }
 
+
         private FrmCustomers frmCustomers;
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -128,6 +129,46 @@ namespace TicariOtomasyon
                 frmMovements.MdiParent = this;
             }
             frmMovements.Show();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        FrmReports frmReports;
+        private void btnReport_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmReports == null)
+            {
+                frmReports = new FrmReports();
+                frmReports.MdiParent = this;
+            }
+            
+            frmReports.Show();
+        }
+
+        private FrmStocks frmStocks;
+        private void btnStocks_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmStocks == null)
+            {
+                frmStocks = new FrmStocks();
+                frmStocks.MdiParent = this;
+            }
+
+            frmStocks.Show();
+        }
+
+        private FrmSettings frmSettings;
+        private void btnSettings_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmSettings == null)
+            {
+                frmSettings = new FrmSettings();
+                
+            }
+            frmSettings.Show();
         }
     }
 }

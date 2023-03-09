@@ -35,7 +35,7 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnStocks = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.btnCompaniesForm = new DevExpress.XtraBars.BarButtonItem();
             this.btnEmployeesForm = new DevExpress.XtraBars.BarButtonItem();
@@ -45,11 +45,11 @@
             this.btnBanks = new DevExpress.XtraBars.BarButtonItem();
             this.btnContact = new DevExpress.XtraBars.BarButtonItem();
             this.btnInvoice = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnMovement = new DevExpress.XtraBars.BarButtonItem();
             this.btnReport = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSettings = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -69,7 +69,7 @@
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1, true);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2, true);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnStocks, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnCompaniesForm, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnEmployeesForm, true);
@@ -81,7 +81,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.btnInvoice, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnMovement, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnReport);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem14, true);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnSettings, true);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
             // barButtonItem5
@@ -111,18 +111,19 @@
             this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
-            // barButtonItem2
+            // btnStocks
             // 
-            this.barButtonItem2.Caption = "STOKLAR";
-            this.barButtonItem2.Id = 2;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.barButtonItem2.ItemAppearance.Disabled.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.barButtonItem2.ItemAppearance.Disabled.Options.UseFont = true;
-            this.barButtonItem2.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.barButtonItem2.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnStocks.Caption = "STOKLAR";
+            this.btnStocks.Id = 2;
+            this.btnStocks.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnStocks.ImageOptions.Image")));
+            this.btnStocks.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnStocks.ImageOptions.LargeImage")));
+            this.btnStocks.ItemAppearance.Disabled.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnStocks.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnStocks.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnStocks.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnStocks.Name = "btnStocks";
+            this.btnStocks.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnStocks.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnStocks_ItemClick);
             // 
             // barButtonItem3
             // 
@@ -229,16 +230,41 @@
             this.btnInvoice.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnInvoice.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInvoice_ItemClick);
             // 
-            // barButtonItem14
+            // btnMovement
             // 
-            this.barButtonItem14.Caption = "AYARLAR";
-            this.barButtonItem14.Id = 14;
-            this.barButtonItem14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.ImageOptions.Image")));
-            this.barButtonItem14.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.ImageOptions.LargeImage")));
-            this.barButtonItem14.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.barButtonItem14.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem14.Name = "barButtonItem14";
-            this.barButtonItem14.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnMovement.Caption = "HAREKETLER";
+            this.btnMovement.Id = 15;
+            this.btnMovement.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMovement.ImageOptions.Image")));
+            this.btnMovement.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnMovement.ImageOptions.LargeImage")));
+            this.btnMovement.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMovement.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnMovement.Name = "btnMovement";
+            this.btnMovement.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnMovement.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMovement_ItemClick);
+            // 
+            // btnReport
+            // 
+            this.btnReport.Caption = "RAPORLAR";
+            this.btnReport.Id = 16;
+            this.btnReport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.ImageOptions.Image")));
+            this.btnReport.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnReport.ImageOptions.LargeImage")));
+            this.btnReport.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnReport.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnReport.Name = "btnReport";
+            this.btnReport.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReport_ItemClick);
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.Caption = "AYARLAR";
+            this.btnSettings.Id = 14;
+            this.btnSettings.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.ImageOptions.Image")));
+            this.btnSettings.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.ImageOptions.LargeImage")));
+            this.btnSettings.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSettings.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnSettings.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSettings_ItemClick);
             // 
             // barButtonItem13
             // 
@@ -255,7 +281,7 @@
             this.ribbonControl1.ExpandCollapseItem,
             this.ribbonControl1.SearchEditItem,
             this.barButtonItem1,
-            this.barButtonItem2,
+            this.btnStocks,
             this.barButtonItem3,
             this.btnCompaniesForm,
             this.barButtonItem5,
@@ -267,7 +293,7 @@
             this.btnContact,
             this.btnInvoice,
             this.barButtonItem13,
-            this.barButtonItem14,
+            this.btnSettings,
             this.btnMovement,
             this.btnReport});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
@@ -276,29 +302,6 @@
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.TİCARİ});
             this.ribbonControl1.Size = new System.Drawing.Size(1912, 150);
-            // 
-            // btnMovement
-            // 
-            this.btnMovement.Caption = "HAREKETLER";
-            this.btnMovement.Id = 15;
-            this.btnMovement.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.btnMovement.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
-            this.btnMovement.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnMovement.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnMovement.Name = "btnMovement";
-            this.btnMovement.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnMovement.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMovement_ItemClick);
-            // 
-            // btnReport
-            // 
-            this.btnReport.Caption = "RAPORLAR";
-            this.btnReport.Id = 16;
-            this.btnReport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
-            this.btnReport.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
-            this.btnReport.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnReport.ItemAppearance.Normal.Options.UseFont = true;
-            this.btnReport.Name = "btnReport";
-            this.btnReport.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // Form1
             // 
@@ -311,6 +314,7 @@
             this.Name = "Form1";
             this.Text = "Ticari Otomasyon";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
@@ -323,7 +327,7 @@
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem btnStocks;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem btnCompaniesForm;
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
@@ -335,7 +339,7 @@
         private DevExpress.XtraBars.BarButtonItem btnContact;
         private DevExpress.XtraBars.BarButtonItem btnInvoice;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem14;
+        private DevExpress.XtraBars.BarButtonItem btnSettings;
         private DevExpress.XtraBars.Ribbon.RibbonPage TİCARİ;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.BarButtonItem btnMovement;
