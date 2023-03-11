@@ -170,5 +170,16 @@ namespace TicariOtomasyon
             }
             frmSettings.Show();
         }
+
+        private FrmStatistics frmStatistics;
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmStatistics == null)
+            {
+                frmStatistics = new FrmStatistics();
+                frmStatistics.MdiParent = this;
+            }
+            frmStatistics.Show();
+        }
     }
 }

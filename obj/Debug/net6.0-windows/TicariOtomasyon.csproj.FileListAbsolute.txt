@@ -121,3 +121,4 @@ C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtoma
 C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmReports.resources
 C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmStocks.resources
 C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmSettings.resources
+C:\Users\akinc\source\repos\TicariOtomasyon\obj\Debug\net6.0-windows\TicariOtomasyon.FrmStatistics.resources

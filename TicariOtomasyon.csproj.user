@@ -46,6 +46,9 @@
     <Compile Update="FrmSettings.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmStocks.cs">
       <SubType>Form</SubType>
     </Compile>
